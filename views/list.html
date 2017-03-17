@@ -1,0 +1,20 @@
+
+ 
+<div class="contanier">
+ <caption class="lead">Contactos</caption>
+  <table class="table">
+ 
+    
+    <a ng-repeat="contact in contacts | orderBy: 'name'" class="list-group-item"  href="#/contact-info/{{contact.$id}}">
+    <h4 class="list-group-item-heading">{{contact.name}}</h4>
+    <span class="glyphicon glyphicon-phone"> {{contact.phone}} </span> - <span class="glyphicon glyphicon-envelope"> {{contact.email}} </span>
+    </a>
+    <br>
+    <br>
+
+    <p>
+    <a href="#/add" class="btn btn-success" role="button">Add New Contact</a>
+    </p>
+</div>
+</div>
+</div>

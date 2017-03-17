@@ -1,0 +1,53 @@
+
+
+
+<h1>Agregar Contacto</h1>
+<div class="container">
+
+ 
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Nombre</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="name"
+             ng-model="contact.name" placeholder="Nombre"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="email"
+             ng-model="contact.email" placeholder="Email"/>
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="phone" class="col-sm-2 control-label">Telefono:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="phone" type="number" min=”0? step="any"
+             ng-model="contact.phone" placeholder="Telefono" >
+    </div>
+ 
+  </div>
+   <div class="form-group">
+    
+    <label for="note" class="col-sm-2 control-label">Notas:</label>
+    <div class="col-sm-4">
+    <textarea class="form-control" id="note"  row="8" ng-model="contact.note"></textarea>
+    </div>
+    </div>
+    
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <a ng-click="addContact()" class="btn btn-small btn-primary">Agregar Contacto</a>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+ 

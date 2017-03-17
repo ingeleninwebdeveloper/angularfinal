@@ -1,0 +1,43 @@
+<h1>Edit Product</h1>
+
+
+<form name="edit_form" class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="Name" class="col-sm-2 control-label">Nombre</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="name"
+             ng-model="contact.name" placeholder="Nombre"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Email" class="col-sm-2 control-label">Email:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="email"
+             ng-model="contact.email" placeholder="Email"/>
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="Phone" class="col-sm-2 control-label">Telefono:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="phone" type="number" 
+             ng-model="contact.phone" placeholder="Telefono" >
+    </div>
+ 
+  </div>
+   <div class="form-group">
+    
+    <label for="Note" class="col-sm-2 control-label">Notas:</label>
+    <div class="col-sm-4">
+    <textarea class="form-control" id="note"  row="8" ng-model="contact.note"></textarea>
+    </div>
+    </div>
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" id="submit" class="btn btn-small btn-primary" ng-click="editContact()" class="btn btn-small btn-primary"></button> <a href="#/contacts" class="btn btn-small btn-danger">Cancel</a>
+    </div>
+  </div>
+</form>

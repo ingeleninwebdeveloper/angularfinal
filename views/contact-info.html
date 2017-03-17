@@ -1,0 +1,24 @@
+
+    <form name="edit_form">
+      <div class="list-group-item">
+        <h3 class="text-center">{{contact.name}}</h3>
+        <p>email: <a ng-href="{{currentContact.email}}">{{contact.email}}</a></p>
+        <p>phone: {{contact.phone}}</p>
+        <p>url: <a ng-href="{{currentContact.url}}">{{contact.url}}</a></p>
+        <p>Notes:</p>
+        <p class="well well-lg">{{contact.note}}</p>
+
+       
+        <div>
+         <a class="glyphicon glyphicon-pencil" href="#/edit/{{contact.$id}}"></a><span> - Edit</span>
+        
+         &nbsp; &nbsp;
+
+        <a href="#/" ng-click="removeContact(currentContact)" class="glyphicon glyphicon-trash"> </a> <span> - Remove</span>
+       
+        
+      </div>
+
+           
+
+    
